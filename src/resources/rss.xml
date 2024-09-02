@@ -1,29 +1,3 @@
-# Import XML as text
-
-### Setup
-
-(optional) Install `@antfu/ni` to run commands
-
-```sh
-pnpm install -g @antfu/ni 
-```
-
-Install dependencies
-
-```sh
-ni
-```
-
-### Start dev server
-
-```sh
-nr start
-```
-
-### Send requests
-
-```sh
-$ curl http://localhost:3000
 <rss version="2.0">
 	<channel>
 		<title>Hacker News</title>
@@ -49,10 +23,3 @@ $ curl http://localhost:3000
 		</item>
 	</channel>
 </rss>
-```
-
-### Run tests
-
-```sh
-nr test
-```

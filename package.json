@@ -2,7 +2,8 @@
   "scripts": {
     "lint": "tsc --noEmit && biome check .",
     "format": "biome check --write .",
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "vitest"
   },
   "packageManager": "pnpm@9.0.6",
   "devDependencies": {
