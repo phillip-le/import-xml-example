@@ -1,7 +1,8 @@
 {
   "scripts": {
     "lint": "tsc --noEmit && biome check .",
-    "format": "biome check --write ."
+    "format": "biome check --write .",
+    "start": "nodemon"
   },
   "packageManager": "pnpm@9.0.6",
   "devDependencies": {
@@ -9,7 +10,10 @@
     "@tsconfig/node22": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^22.5.2",
+    "nodemon": "^3.1.4",
+    "pino-pretty": "7.0.0",
     "typescript": "^5.5.4",
+    "vite-node": "^2.0.5",
     "vitest": "^2.0.5"
   },
   "dependencies": {
