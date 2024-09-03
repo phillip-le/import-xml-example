@@ -16,8 +16,16 @@ ni
 
 ### Start dev server
 
+Using [vite-node](https://www.npmjs.com/package/vite-node)
+
 ```sh
-nr start
+nr start:vite
+```
+
+Using [esbuild](https://esbuild.github.io/)
+
+```sh
+nr start:esbuild
 ```
 
 ### Send requests
@@ -55,4 +63,16 @@ $ curl http://localhost:3000
 
 ```sh
 nr test
+```
+
+### Lint
+
+```sh
+nr lint
+```
+
+### Format / Autofix linting issues
+
+```sh
+nr format
 ```

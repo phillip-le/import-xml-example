@@ -2,17 +2,22 @@
   "scripts": {
     "lint": "tsc --noEmit && biome check .",
     "format": "biome check --write .",
-    "start": "nodemon",
+    "start:vite": "nodemon --config ./nodemon.vite.json",
+    "start:esbuild": "nodemon --config ./nodemon.esbuild.json",
+    "build": "tsx runEsbuild.ts",
     "test": "vitest"
   },
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@tsconfig/node22": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^22.5.2",
+    "esbuild": "^0.23.1",
+    "esbuild-plugin-pino": "^2.2.0",
     "nodemon": "^3.1.4",
     "pino-pretty": "7.0.0",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4",
     "vite-node": "^2.0.5",
     "vitest": "^2.0.5"

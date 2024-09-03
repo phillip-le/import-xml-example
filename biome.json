@@ -24,6 +24,6 @@
     }
   },
   "files": {
-    "ignore": [".astro/**/*", "**/*/manifest.json"]
+    "ignore": ["dist/**/*"]
   }
 }
