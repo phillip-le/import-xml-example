@@ -8,9 +8,6 @@ build({
   bundle: true,
   platform: 'node',
   outdir: './dist',
-  loader: {
-    '.xml': 'file',
-  },
   minify: true,
   plugins: [
     {
